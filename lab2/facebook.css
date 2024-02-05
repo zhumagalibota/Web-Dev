@@ -1,0 +1,142 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    height: 100%;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:#f7f7f7;   
+}
+.container {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+}
+#logo {
+    color: 	#1877f2;
+    font-size: 55px;;
+    font-family: sans-serif;
+}
+#txt {
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 450px;
+    height: 370px;
+    box-shadow: -10px -10px 15px rgba(0,0,0,0.1), 10px 10px 15px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    
+}
+form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+}
+input {
+    width: 350px;
+    height: 50px;
+    margin: 10px 0px;
+    padding: 0px 0px;
+    outline: none;
+    border: 1px solid #acc;
+    border-radius: 10px;
+}
+
+#submit {
+    background-color: #1877f2;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+#new-password {
+    color: #1877f2;
+    font-weight:600;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+#login-hr{
+    border: 1px solid #acc;
+    width: 320px;
+    margin: 20px 0px;
+}
+.new-acc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(75, 185, 52);
+    width: 250px;
+    height: 50px;
+    font-size: 19px;
+    font-weight: 30px;
+    color: white;
+    border-radius: 10px;
+}
+#font {
+    font-weight: bold;
+}
+
+#cont {
+    margin-top: 250px;
+    background-color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.new-container{
+    text-align: left;
+    margin-left: 220px
+
+}
+#languages {
+    font-weight: 100px;
+    color: gray;
+    word-spacing: 15px;
+    font-size: 15px;
+    font-weight: lighter;
+    cursor: pointer;
+}
+button {
+    height: 15px;
+    width: 20px;
+}
+
+#second-hr {
+    border: 1px solid #acc;
+    width: 1000px;
+    margin: 20px 0px;
+
+}
+
+#other {
+    margin-right: 300px;
+    color:gray;
+    word-spacing: 15px;
+    font-size: 15px;
+    font-weight: lighter;
+    cursor: pointer;
+    line-height: 25px;
+}
+#o {
+    color:gray;
+    margin-top: 30px;
+    font-size: 15px;
+    font-weight: lighter;
+}
