@@ -28,6 +28,7 @@ body{
     line-height: 32px;
     width: 500px;
     font-family: Arial, Helvetica, sans-serif;
+    padding-right: 20px;
 }
 .login {
     display: flex;
@@ -139,4 +140,8 @@ button {
     margin-top: 30px;
     font-size: 15px;
     font-weight: lighter;
+}
+#a {
+    padding-top: 15px;
+    padding-left: 15px;
 }
