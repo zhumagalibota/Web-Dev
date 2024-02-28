@@ -1,5 +1,10 @@
-<app-top-bar></app-top-bar>
-
 <div class="container">
-  <router-outlet></router-outlet>
+  <h1>Welcome to My Angular Product App!</h1>
+  <div *ngFor="let product of products" class="product">
+    <img [src]="product.image" [alt]="product.name">
+    <h2>{{ product.name }}</h2>
+    <p class="description">{{ product.description }}</p>
+    <p class="rating">Rating: {{ product.rating }}</p>
+    <button (click)="shareProduct(product.link)">Share</button>
+  </div>
 </div>
