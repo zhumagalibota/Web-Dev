@@ -1,0 +1,17 @@
+.product-item {
+    margin-bottom: 20px;
+  }
+  
+  .product-item img {
+    width: 200px;
+    height: auto;
+  }
+  
+  .share-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  

@@ -1,5 +1,5 @@
 {
-  "name": "webdev",
+  "name": "lab5",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:webdev": "node dist/webdev/server/server.mjs"
+    "serve:ssr:lab5": "node dist/lab5/server/server.mjs"
   },
   "private": true,
   "dependencies": {
