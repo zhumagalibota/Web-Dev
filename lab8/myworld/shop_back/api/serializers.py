@@ -6,3 +6,6 @@ class ProductSerializer(serializers.Serializer):
     description = serializers.CharField()
     count = serializers.IntegerField()
     is_active = serializers.BooleanField(default=True)
+
+class CategorySerializer(serializers.Serializer):
+    name = serializers.CharField(label="Enter category name")

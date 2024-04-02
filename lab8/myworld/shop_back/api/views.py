@@ -23,3 +23,18 @@ class ProductApiView(APIView):
                               )
         product = Product.objects.all().filter(name=request.data["name"]).values()
         return Response({"Message":"New product added", "Product":allProducts})
+
+class CategoryApiView(APIView):
+    serializer_class = CategorySerializer
+    
+    def get(self, request):
+        allCategories = Category.objects.all().values()  # Corrected query here
+        return Response({"Message": "List of Categories", "Category list": allCategories})
+
+    def post(self, request):
+        print('Requested data is: ', request.data)
+        serializer_obj = CategorySerializer(data=request.data)
+        if serializer_obj.is_valid():
+            Category.objects.create(name=serializer_obj.data.get("name"))
+        category = Category.objects.all().filter(name=request.data["name"]).values()
+        return Response({"Message": "New category added", "Category": category})
