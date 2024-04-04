@@ -24,6 +24,12 @@ class ProductApiView(APIView):
         product = Product.objects.all().filter(name=request.data["name"]).values()
         return Response({"Message":"New product added", "Product":allProducts})
 
+    def get_product(self, request):
+        try:
+            return Product.objects.get(id=id)
+        except Product.DoesNotExist:
+            raise status.HTTP_404_NOT_FOUND
+
 class CategoryApiView(APIView):
     serializer_class = CategorySerializer
     
