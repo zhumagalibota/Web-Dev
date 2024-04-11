@@ -22,9 +22,9 @@ def company_detail(request, company_id):
     return HttpResponse(data, content_type='application/json')
 
 
-def vacancy_detail(request, company_id):
-    vacancy = get_object_or_404(Vacancy, pk=company_id)
-    data = serializers.serialize('json', [Vacancy])
+def vacancy_detail(request, vacancy_id):
+    vacancy = get_object_or_404(Vacancy, pk=vacancy_id)
+    data = serializers.serialize('json', [vacancy])
     return HttpResponse(data, content_type='application/json')
 
 
@@ -37,5 +37,5 @@ def vacancy_sorted(request):
 def vacancies_by_company(request, company_id):
     company = Company.objects.get(pk=company_id)
     vacancies = Vacancy.objects.filter(company=company).values('name', 'description', 'salary')
-    vacancies_data = list(vacancies)  # Convert QuerySet to list for JSON serialization
+    vacancies_data = list(vacancies) 
     return JsonResponse({'company': company.name, 'vacancies': vacancies_data})

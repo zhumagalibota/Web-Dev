@@ -25,5 +25,5 @@ urlpatterns = [
     path('vacancies/', views.testingVacancy, name='vacancy_list'),
     path('vacancy/<int:vacancy_id>/', views.vacancy_detail, name='vacancy_detail'),
     path('vacancies_sorted/', views.vacancy_sorted, name='vacancy_sorted_by_salary'),
-     path('company/<int:company_id>/vacancies/', views.vacancies_by_company, name='vacancies_by_company'),
+    path('company/<int:company_id>/vacancies/', views.vacancies_by_company, name='vacancies_by_company'),
 ]
